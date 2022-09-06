@@ -7,8 +7,10 @@ public class FindLonelyInt {
         int result = 0;
         Outer: for(int i = 0; i < a.size(); i++){
             if(a.size()>1) {
-                for (int j = i + 1; j < a.size(); j++) {
+                for (int j = i; j < a.size(); j++) {
                     if (a.get(i) == a.get(j)) {
+
+                        i++;
                         continue Outer;
                     }
                     if(i==j-1 && j==a.size()-1){

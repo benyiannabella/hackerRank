@@ -1,5 +1,7 @@
 package heckerRank;
 
+import java.util.Scanner;
+
 public class Shape{
     private int length;
     private int breadth;
@@ -30,16 +32,30 @@ public class Shape{
         System.out.println(this.length + " " + this.breadth);
     }
 
+
+
     public static void main(String[] args) {
-        Shape s = new Shape(4,5);
-        Rectangle r = new Rectangle(4,5);
-        s.area();
+        Shape shape = new Shape();
+        Shape r = new Rectangle();
+        Scanner scanner = new Scanner(System.in);
+        String s = scanner.nextLine();
+        System.out.println(s);
+        String[] arr = s.split(" ");
+
+                r.setLength(Integer.parseInt(arr[0]));
+                shape.setLength(Integer.parseInt(arr[0]));
+
+                r.setBreadth(Integer.parseInt(arr[1]));
+                shape.setBreadth(Integer.parseInt(arr[1]));
+
+
+        shape.area();
         r.area();
     }
 }
 
-class Rectangle extends Shape{
-
+    class Rectangle extends Shape{
+    public  Rectangle(){}
     public Rectangle(int length, int breadth){
         super(length, breadth);
     }

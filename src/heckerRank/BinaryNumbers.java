@@ -24,6 +24,23 @@ public class BinaryNumbers {
     }
 
     public static void main(String[] args) {
-        calConsecutiveOnes(13);
+       // calConsecutiveOnes(13);
+
+        int i = 010;
+        int j = 07;
+
+        System.out.println("__________");
+        System.out.println(i);
+        System.out.println(j);
+
+        try {
+            Float f1 = new Float("3.0");
+            System.out.println(f1);
+        } catch (NumberFormatException ex){
+            System.out.println("failure");
+        }
+
+        /*comment //comment******/
+        /*commee tgvgvsg/* jbjbcjb*/
     }
 }
